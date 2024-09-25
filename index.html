@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web - Sergio Sanchez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-924KQZDC5E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-924KQZDC5E');
+    </script>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="tienda.html" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="login_y_register_FUNCIONANDO/login_o_register.php">Iniciar Sesión</a></li>
+                    <li><a href="tienda.html">Servicios</a></li>
+                    <li><a href="tienda.html">Productos</a></li>
+                    <li><a href="tienda.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <a href="tienda.html" class="img-carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cartItemCount">0</span> 
+                        </a>                          
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <p class="titulo-carrito">Productos agregados al carrito: </p>
+                                    <br>
+                                    <tr>
+                                        <th>Portada</th>
+                                        <th>Título</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                                <br>
+                                <div class="totalprecio-contenedor" style="text-align: right !important; color: white; margin-right: 42px; margin-bottom: -20px;">
+                                    <span>Total: <span id="totalPrecio">0.00</span> €</span>
+                                </div>
+                                <br>
+                                <a href="#" id="vaciar-carrito" class="btn-4">Vaciar Carrito</a>
+                                <a href="#" id="comprar-ahora" class="btn-5">Comprar Ahora</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>El gran Libro de los lugares mágicos</h1>
+                                <div class="prices">
+                                    <p class="price-1">170€</p>
+                                    <p class="price-2">150 €</p>
+                                </div>
+                                <a href="tienda.html" class="btn-1">Información</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="images/libro1.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>¿Lo sabes todo de Harry Potter?</h1>
+                                <div class="prices">
+                                    <p class="price-1">57€</p>
+                                    <p class="price-2">49.99 €</p>
+                                </div>
+                                <a href="tienda.html" class="btn-1">Información</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="images/libro4.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>El gran libro de las criaturas</h1>
+                                <div class="prices">
+                                    <p class="price-1">75€</p>
+                                    <p class="price-2">65 €</p>
+                                </div>
+                                <a href="tienda.html" class="btn-1">Información</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="images/libro3.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section class="section4">
+            <div class="textos-section4">
+                <h1>Bienvenid@ al lugar más mágico...</h1>
+                <h2>Jamás Conocido...</h2>
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #000000;">
+                    </path>
+                </svg>
+            </div>
+        </section>
+        <section class="products container" id="lista-2">
+            <h2>Nuevos Libros</h2>
+            <div class="swiper mySwiper-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro5.jpg" alt="">
+                            <div class="product-txt">
+                                <h3>Las Aventuras de Asterix</h3>
+                                <p>Formato Físico y Epub</p>
+                                <p class="precio" >30€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro6.jpg" alt="">
+                            <div class="product-txt">
+                                <h3>Obelix y Compañía</h3>
+                                <p>Formato físico</p>
+                                <p class="precio" >70€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="6" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro7.jpg" alt="">
+                            <div class="product-txt">
+                                <h3>La hija de Vercingetorix</h3>
+                                <p>Edición Coleccionista</p>
+                                <p class="precio" >150€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="7" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro8.jpg" alt="">
+                            <div class="product-txt">
+                                <h3>Asterix en Hispania</h3>
+                                <p style="color: red !important;">Agotado</p>
+                                <p class="precio" > 10€ </p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="8" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>  
+        <hr>
+        <section class="products container" id="lista-3">
+            <h2>Especialistas en Harry Potter </h2>
+            <div class="swiper mySwiper-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro1.jpeg" alt="">
+                            <div class="product-txt">
+                                <h3>El gran libro de los lugares mágicos</h3>
+                                <p>1ª Edición</p>
+                                <p class="precio" >100€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="9" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro2.jpeg" alt="">
+                            <div class="product-txt">
+                                <h3>El gran libro de los personajes</h3>
+                                <p>Tapa dura</p>
+                                <p class="precio" >79.99€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="10" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro3.jpeg" alt="">
+                            <div class="product-txt">
+                                <h3>El gran libro de las criaturas</h3>
+                                <p style="color: yellow;">Próximamente</p>
+                                <p class="precio" >99.95€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="11" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <img src="images/libro4.jpeg" alt="">
+                            <div class="product-txt">
+                                <h3>¿Lo sabes todo de Harry Potter?</h3>
+                                <p>Para toda la familia</p>
+                                <p class="precio" >49.95€</p>
+                                <a href="#" class="agregar-carrito btn-3" data-id="12" >Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>  
+        <section class="section4">
+            <div class="textos-section4">
+                <h1>Porque leer no entiende de edades,</h1>
+                <h2>y tiene (muchos)  beneficios...</h2>
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #000000;">
+                    </path>
+                </svg>
+            </div>
+        </section>
+        <section class="portafolio">
+            <h2>Beneficios</h2>
+            <div class="galeria-port">
+                <div class="imagen-port">
+                    <img src="images/descarga5.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Más Cultura</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="images/descarga2.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Más Vocabulario</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="images/descarga3.jpg" alt="">
+                    <div class="hover-galeria">
+                        <img src="images/icono1.png" alt="">
+                        <p>Mayor Comprensión</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio2">
+            <div class="galeria-port2">
+                <div class="imagen-port2">
+                    <img src="images/descarga4.jpg" alt="">
+                    <div class="hover-galeria2">
+                        <img src="images/icono1.png" alt="">
+                        <p>Reducción de estrés</p>
+                    </div>
+                </div>
+                <div class="imagen-port2">
+                    <img src="images/descarga.jpeg" alt="">
+                    <div class="hover-galeria2">
+                        <img src="images/icono1.png" alt="">
+                        <p>Mayor imaginacion</p>
+                    </div>
+                </div>
+                <div class="imagen-port2">
+                    <img src="images/descarga6.jpg" alt="">
+                    <div class="hover-galeria2">
+                        <img src="images/icono1.png" alt="">
+                        <p>Apoyo a la cultura</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="animated-section">
+            <section class="section8">
+                <div class="content">
+                    <h1>¡Ven y descubre más!</h1>
+                    <h2>Te esperamos en...</h2>
+                    <h3 class="address">Calle Consuegra 3, 28035, Madrid</h3>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.020749417176!2d-3.6791206245919152!3d40.47480597143029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229475fc7e749%3A0x71a6fb4707b13a23!2sC.%20Consuegra%2C%203%2C%2028036%20Madrid!5e0!3m2!1ses!2ses!4v1695728533271!5m2!1ses!2ses" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Libros</h4>
+                    <ul>
+                        <li><a href="tienda.html">En Español</a></li>
+                        <li><a href="tienda.html">En Inglés</a></li>
+                        <li><a href="tienda.html">Otros idiomas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links"">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="tienda.html">Preguntas</a></li>
+                        <li><a href="tienda.html">Compras</a></li>
+                        <li><a href="tienda.html">Envíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="tienda.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Nuestros Servicios</a></li>
+                        <li><a href="tienda.html">Politica de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links social-links">
+                    <h4>Síguenos</h4>
+                    <div>
+                        <a href="https://www.instagram.com/ssanchez_dlp/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ssanchez_dlp/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sergio-s%C3%A1nchez-de-la-pe%C3%B1a-3b475a202/"><i class="fab fa-x"></i></a>
+                        <a href="https://www.linkedin.com/in/sergio-s%C3%A1nchez-de-la-pe%C3%B1a-3b475a202/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('comprar-ahora').addEventListener('click', function() {
+    window.location.href = 'pagar.html';
+    });
+    
+
+    $(document).ready(function() {
+        $(".agregar-carrito").on("click", function() {
+            alert("Agregado al carrito");
+        });
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
